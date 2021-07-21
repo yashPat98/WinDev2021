@@ -1,0 +1,28 @@
+Windows
+* Process is the container (daba)
+* Thread is contained in the container (undir) 
+
+IX
+* There is no thread in unix based system
+* Fork -> Process -> can be mapped as thread
+* Fork and Exec -> Full Blown Process
+
+* Process - Running instance of program is called process
+* Thread - A Running entity inside a container called process, is called as a thread
+* Every Process has atleast 1 thread i.e main thread / primary thread 
+
+01 -> Thread is part of "SAME" program
+02 -> Thread share memory of parent 
+03 -> Every thread has its own stack (text and data can be shared between threads)
+04 -> Every thread has its own message queue   
+05 -> Threads share file opened by the parent
+06 -> Every thread has its own CPU quantum
+07 -> Any thread can kill any other thread of same process, 
+      parent thread can kill any of child thread at any time, 
+      OS can kill any thread at any time without intimation.
+08 -> Though above thing is true dont kill a thread explicitely 
+      let the thread die its own death after completion of its associated function
+09 -> Though thread shares everything with parent, it is not true for sibling thread by default
+      If siblings wants to share they have to use a special mechanishm called as TLS(thread local storage)
+10 -> looking at some of points we may think that thread is not independent BUT 
+      Every thread is an independent entity
