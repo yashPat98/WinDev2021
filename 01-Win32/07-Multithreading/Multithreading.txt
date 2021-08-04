@@ -26,3 +26,19 @@ IX
       If siblings wants to share they have to use a special mechanishm called as TLS(thread local storage)
 10 -> looking at some of points we may think that thread is not independent BUT 
       Every thread is an independent entity
+
+
+Multithreading functions 
+
+val = GetExitCodeThread()
+01 -> TerminateThread(hThread, val) - kill from outside thread 
+02 -> ExitThread(DWORD) - kill from inside thread
+03 -> SuspendThread() - ref count increases
+04 -> ResumeThread() - ref count decreases
+05 -> Sleep(time) 
+
+//must not use
+06 -> GetPriorityClass()
+07 -> SetPriorityClass()
+08 -> GetPriority() 
+09 -> SetPriority()
