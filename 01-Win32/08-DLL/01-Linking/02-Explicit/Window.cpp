@@ -89,11 +89,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
             num2 = pfnMakeSquare(num1);
             wsprintf(str, TEXT("The Square of %d is %d."), num1, num2);
             MessageBox(hwnd, str, TEXT("Square"), MB_OK);
-            FreeLibrary(hLib);
-            hLib = NULL;
             break;
         
         case WM_DESTROY:
+            FreeLibrary(hLib);
+            hLib = NULL;
             PostQuitMessage(0);
             break;
         

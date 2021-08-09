@@ -1,4 +1,4 @@
 #pragma once
-extern "C" int MakeSquare(int);
 
+__declspec(dllexport) int MakeCube(int);
 

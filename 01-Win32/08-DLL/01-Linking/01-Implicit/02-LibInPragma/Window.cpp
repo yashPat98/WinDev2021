@@ -73,9 +73,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
     {
         case WM_CREATE:
             num1 = 10;
-            num2 = MakeSquare(num1);
-            wsprintf(str, TEXT("Square of %d is %d."), num1, num2);
-            MessageBox(hwnd, str, TEXT("square"), MB_OK);    
+            num2 = MakeCube(num1);
+            wsprintf(str, TEXT("cube of %d is %d."), num1, num2);
+            MessageBox(hwnd, str, TEXT("cube"), MB_OK);    
             break;
         
         case WM_DESTROY:
