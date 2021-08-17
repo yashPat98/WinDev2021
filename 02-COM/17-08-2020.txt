@@ -1,0 +1,56 @@
+COM (component object mode)
+
+Technologies built upon COM
+1-> Windows shell (shell explorer)
+2-> All User Mode device Drivers
+3-> IIS and Internet explorer
+4-> DirectX 
+    Direct3D
+    Direct2D
+    DirectSound
+    DirectAudio
+    DirectSetup
+    DirectInput
+    DirectShow
+    DirectComposition
+    DirectWrite 
+    DirectCompute
+    DirectPlay
+5-> MSOffice
+6-> All Microsoft IDEs 
+7-> All scripting language works in windows using COM automation
+8-> Visual Basics
+9-> .Net 
+10-> WMI (Windows Management Instrumation) Administrative tools
+11-> other OS softwares are ported only by COM to windows
+     safari, chrome, vlc
+12-> Windows Registry
+13-> Windows Desktop / Windows Stations
+14-> CORBA
+
+COM APIS
+01-> MAPI
+02-> SAPI
+03-> TAPI
+04-> OBEX
+05-> DirectX
+06-> GAPI
+07-> WinINET
+08-> WinRT
+
+Developed by 
+Bob atkinson 
+Tony williams
+Creig Witemberg
+
+What is COM ?
+1-> COM is better C++
+2-> COM is descipline in programming
+3-> COM is best way of IPC
+
+4-> COM is modular, object oriented, customizable, 
+    upgradable, programming language independent and distributed application developement
+
+* OOP = polymorphism + late binding + syntactical encapsulation + implementation inheritance
+* COM = polymorphism + late late binding(real late binding) + binary encapsulation + interface inheritance + binary code reusability
+
