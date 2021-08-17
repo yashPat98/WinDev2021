@@ -62,8 +62,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
 {
     //variable declarations
     HMODULE hLib = NULL;
-    typedef int (*PFNMAKESQUARE)(int);
-    PFNMAKESQUARE pfnMakeSquare = NULL;
+    typedef int (*PFNMAKECUBE)(int);
+    PFNMAKECUBE pfnMakeCube = NULL;
     int num1, num2;
     TCHAR str[255];
 
@@ -78,17 +78,17 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
                 DestroyWindow(hwnd);
             }
 
-            pfnMakeSquare = (PFNMAKESQUARE)GetProcAddress(hLib, "MakeSquare");
-            if(pfnMakeSquare == NULL)
+            pfnMakeCube = (PFNMAKECUBE)GetProcAddress(hLib, "MakeCube");
+            if(pfnMakeCube == NULL)
             {
-                MessageBox(hwnd, TEXT("Failed to get MakeSquare procedure"), TEXT("Error"), MB_OK | MB_ICONERROR);
+                MessageBox(hwnd, TEXT("Failed to get MakeCube procedure"), TEXT("Error"), MB_OK | MB_ICONERROR);
                 DestroyWindow(hwnd);
             }
 
             num1 = 15;
-            num2 = pfnMakeSquare(num1);
-            wsprintf(str, TEXT("The Square of %d is %d."), num1, num2);
-            MessageBox(hwnd, str, TEXT("Square"), MB_OK);
+            num2 = pfnMakeCube(num1);
+            wsprintf(str, TEXT("The cube of %d is %d."), num1, num2);
+            MessageBox(hwnd, str, TEXT("cube"), MB_OK);
             break;
         
         case WM_DESTROY:

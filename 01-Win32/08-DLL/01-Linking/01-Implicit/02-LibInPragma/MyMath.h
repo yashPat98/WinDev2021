@@ -1,4 +1,4 @@
 #pragma once
 
-__declspec(dllexport) int MakeCube(int);
+extern "C" int MakeCube(int);
 

@@ -1,0 +1,31 @@
+//Five methods to import data from dll
+
+1 -> __declaspec(export) int i;
+
+2 -> def file      
+     i DATA; 
+     func FUNCTION; (default)         
+
+3  -> Shared memory
+    //globally
+    char str[255] to be export
+
+    #pragma data_seg("temp")         //name of shared memory which we want to give to os
+    char str[255] = {'\0'};          //data MUST be initialized , must be in data_seg pragma and tell linker this data is prt of shrd mem
+    #pragma data_seg()
+ 
+    #pragma comment(linker, "/section:temp, RWS")
+
+4 -> make the data as retured value of function
+
+5 -> COM (component object model)
+
+* Resource only DLL
+1->rc files + header file
+2->cpp file (dll main)
+
+* DLL main
+1-> IDE
+2-> No Switch case
+3-> any two pairs process or thread
+4-> all cases

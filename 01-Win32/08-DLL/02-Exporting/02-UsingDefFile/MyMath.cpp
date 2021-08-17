@@ -24,7 +24,7 @@ BOOL WINAPI DllMain(HINSTANCE hDll, DWORD dwReason, LPVOID lpReserverd)
     return (TRUE);
 }
 
-extern "C" __declspec(dllexport) int MakeCube(int num) 
+extern "C" int MakeCube(int num) 
 {
     //code
     int cube = num * num * num;
