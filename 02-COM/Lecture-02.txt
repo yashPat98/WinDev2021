@@ -1,0 +1,38 @@
+Why COM ?
+
+01->DLL should loaded using its name
+    DLL is loaded by registry in COM
+
+02-> Not all programming languages can create DLL
+    COM automation
+
+03-> DLL cannot be loaded automatic 
+
+04-> DLL is NOT object oriented
+
+05-> Name mangled class function cannot be exported by DLL
+
+06-> multiple version of DLL cannot be maintained
+
+
+-------------------------
+overhead members of c++ class/ hidden members of c++ class
+01-> this pointer
+02-> vptr (virtual function table base pointer)
+03-> type_info
+--------------------------
+
+COM is not API
+
+COM evolution ?
+
+01->Clipboard                               1987
+02->Dynamic Data Exchange                   1989
+03->Object linking and embedding (OLE1)     1992
+04-> OLE2                                   1993
+05-> OLE2 was renamed COM                   1995
+06-> COM with DCE(distributed computing environment), RPC(remote procedural call) and UUID(unique universal ID) (OSF)
+     DCOM
+07-> MTS 
+08-> .NET 
+

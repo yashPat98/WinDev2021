@@ -1,0 +1,14 @@
+iUnknown Interface
+1-> AddRef
+2-> QueryInterface
+3-> Release
+
+iClassFactory Interface
+1-> CreateInstance
+2-> LockServer
+
+Interface = * Interface is set of semantically related functions 
+            * Interface is set of function pointer packed in pure abstract base class
+            * Interface is array of pure virtual function pointers
+
+

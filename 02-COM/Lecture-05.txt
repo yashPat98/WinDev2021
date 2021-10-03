@@ -1,0 +1,40 @@
+1 -> UUID (Universal Unique Identifier)  generated an unique ID across globe
+2 -> GUID is typedef of UUID
+
+struct _GUID
+{
+    DWORD Data1;            //32 = 4 bytes
+    WORD Data2;             //16 = 2 bytes
+    WORD Data3;             //16 = 2 bytes
+    BYTE Data4[8];          //64 = 1 byte * 8
+};
+
+sizeof(_GUID) = 128 bit
+
+GUID of iUnknown = 
+
+GUID generated from visual studios
+    {1D0D7281-2F7A-4146-A884-6FC2F01118AC}
+    IMPLEMENT_OLECREATE(<<class>>, <<external_name>>, 
+    0x1d0d7281, 0x2f7a, 0x4146, 0xa8, 0x84, 0x6f, 0xc2, 0xf0, 0x11, 0x18, 0xac);
+
+
+
+Before NIC (Network Interface Card) 
+time stamp creates number of ticks from 
+15 october 1582 EPOC time
+
+
+if we generate 1 trillion GUIDs per second it will take 
+10 782 897 524 560 000 000 
+years to cross
+340 282 920 900 000 000
+000 000 000 000 000 000
+number
+
+
+__stdcall = local variables are cleared by function itself
+            while returning from stack frame
+
+__cdecl =  local variables are cleared by calling function 
+            when stack frame of that function is destroyed
